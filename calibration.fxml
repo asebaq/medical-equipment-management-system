@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Calibration">
+   <children>
+      <GridPane layoutX="39.0" layoutY="41.0" prefHeight="389.0" prefWidth="394.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="193.0" minWidth="10.0" prefWidth="174.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="203.0" minWidth="10.0" prefWidth="166.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Period" GridPane.rowIndex="1">
+               <font>
+                  <Font size="24.0" />
+               </font></Label>
+            <Label text="Start Date" GridPane.rowIndex="2">
+               <font>
+                  <Font size="24.0" />
+               </font></Label>
+            <Label text="Color" GridPane.rowIndex="3">
+               <font>
+                  <Font size="24.0" />
+               </font></Label>
+            <Label text="Notes" GridPane.rowIndex="4">
+               <font>
+                  <Font size="24.0" />
+               </font></Label>
+            <Label text="Equipment ID">
+               <font>
+                  <Font size="24.0" />
+               </font></Label>
+            <TextField fx:id="notesTextField" promptText="Notes" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <font>
+                  <Font size="18.0" />
+               </font></TextField>
+            <DatePicker fx:id="startDate" prefHeight="40.0" prefWidth="200.0" promptText="mm/dd/yyyy" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="equipmentID" promptText="123456789" GridPane.columnIndex="1">
+               <font>
+                  <Font size="18.0" />
+               </font></TextField>
+            <MenuButton fx:id="periodMenuButton" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="1">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#periodMenu" text="1" />
+                <MenuItem mnemonicParsing="false" onAction="#periodMenu" text="2" />
+                  <MenuItem mnemonicParsing="false" onAction="#periodMenu" text="3" />
+                  <MenuItem mnemonicParsing="false" onAction="#periodMenu" text="4" />
+                  <MenuItem mnemonicParsing="false" onAction="#periodMenu" text="5" />
+                  <MenuItem mnemonicParsing="false" onAction="#periodMenu" text="6" />
+                  <MenuItem mnemonicParsing="false" onAction="#periodMenu" text="7" />
+                  <MenuItem mnemonicParsing="false" onAction="#periodMenu" text="8" />
+                  <MenuItem mnemonicParsing="false" onAction="#periodMenu" text="9" />
+                  <MenuItem mnemonicParsing="false" onAction="#periodMenu" text="10" />
+                  <MenuItem mnemonicParsing="false" onAction="#periodMenu" text="11" />
+                  <MenuItem mnemonicParsing="false" onAction="#periodMenu" text="12" />
+                  <MenuItem mnemonicParsing="false" onAction="#periodMenu" text="13" />
+                  <MenuItem mnemonicParsing="false" onAction="#periodMenu" text="14" />
+                  <MenuItem mnemonicParsing="false" onAction="#periodMenu" text="15" />
+                  <MenuItem mnemonicParsing="false" onAction="#periodMenu" text="16" />
+                  <MenuItem mnemonicParsing="false" onAction="#periodMenu" text="17" />
+                  <MenuItem mnemonicParsing="false" onAction="#periodMenu" text="18" />
+                  <MenuItem mnemonicParsing="false" onAction="#periodMenu" text="19" />
+                  <MenuItem mnemonicParsing="false" onAction="#periodMenu" text="20" />
+                  <MenuItem mnemonicParsing="false" onAction="#periodMenu" text="21" />
+                  <MenuItem mnemonicParsing="false" onAction="#periodMenu" text="22" />
+                  <MenuItem mnemonicParsing="false" onAction="#periodMenu" text="23" />
+                  <MenuItem mnemonicParsing="false" onAction="#periodMenu" text="24" />
+                  <MenuItem mnemonicParsing="false" onAction="#periodMenu" text="25" />
+                  <MenuItem mnemonicParsing="false" onAction="#periodMenu" text="26" />
+                  <MenuItem mnemonicParsing="false" onAction="#periodMenu" text="27" />
+                  <MenuItem mnemonicParsing="false" onAction="#periodMenu" text="28" />
+                  <MenuItem mnemonicParsing="false" onAction="#periodMenu" text="29" />
+                  <MenuItem mnemonicParsing="false" onAction="#periodMenu" text="30" />
+              </items>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </MenuButton>
+            <MenuButton fx:id="colorMenuButton" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="3">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#colorMenu" text="Green" />
+                <MenuItem mnemonicParsing="false" onAction="#colorMenu" text="Yellow" />
+                  <MenuItem mnemonicParsing="false" onAction="#colorMenu" text="Red" />
+              </items>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </MenuButton>
+         </children>
+      </GridPane>
+      <GridPane layoutX="241.0" layoutY="503.0" prefHeight="64.0" prefWidth="384.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button mnemonicParsing="false" onAction="#saveButton" prefHeight="40.0" prefWidth="100.0" text="Save">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button mnemonicParsing="false" onAction="#deleteButton" prefHeight="40.0" prefWidth="100.0" text="Delete" GridPane.columnIndex="1">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button mnemonicParsing="false" onAction="#backButton" prefHeight="40.0" prefWidth="100.0" text="Back" GridPane.columnIndex="2">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
