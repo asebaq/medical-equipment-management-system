@@ -5,6 +5,7 @@ We are using MySql database to save equipment records and data, and JavaFx is us
 
 ## Features
   - Save the equipment vendor.
+  - Save the equipment department.
   - Save the equipment maintenance provider.
   - Keep track of the equipment downtime.
   - Keep track of the equipment repairs and spare parts that are used.
